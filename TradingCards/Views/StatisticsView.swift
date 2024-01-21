@@ -16,10 +16,9 @@ struct StatisticsView: View {
     
     var body: some View {
         ZStack {
-            Color.white
+            Color.clear
                 .ignoresSafeArea()
             VStack (alignment: .leading) {
-                Spacer()
                 HStack {
                     Text("Career stats")
                         .bold()
