@@ -36,7 +36,7 @@ struct StatisticsView: View {
                     }
                     VStack (alignment: .leading) {
                         Text("Batting average")
-                        Text("\(average)")
+                        Text("\(average.roundedToThousandth)")
                     }
                 }
                 Text("Most famous play")

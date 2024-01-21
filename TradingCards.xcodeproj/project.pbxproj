@@ -16,6 +16,7 @@
 		1A560AC22B5AB83F00D4A5B4 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A560AC12B5AB83F00D4A5B4 /* StatisticsView.swift */; };
 		1A560AC42B5AB85200D4A5B4 /* EnhancedListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A560AC32B5AB85200D4A5B4 /* EnhancedListItemView.swift */; };
 		1A560AC62B5AB86000D4A5B4 /* BlueJaysPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A560AC52B5AB86000D4A5B4 /* BlueJaysPlayer.swift */; };
+		1A59975F2B5CA0C600D7DAA6 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A59975E2B5CA0C600D7DAA6 /* ExtensionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1A560AC12B5AB83F00D4A5B4 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		1A560AC32B5AB85200D4A5B4 /* EnhancedListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedListItemView.swift; sourceTree = "<group>"; };
 		1A560AC52B5AB86000D4A5B4 /* BlueJaysPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueJaysPlayer.swift; sourceTree = "<group>"; };
+		1A59975E2B5CA0C600D7DAA6 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				1A560AAF2B5AB33400D4A5B4 /* PlayerListView.swift */,
 				1A560AC12B5AB83F00D4A5B4 /* StatisticsView.swift */,
 				1A560AC32B5AB85200D4A5B4 /* EnhancedListItemView.swift */,
+				1A59975E2B5CA0C600D7DAA6 /* ExtensionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				1A560AC22B5AB83F00D4A5B4 /* StatisticsView.swift in Sources */,
 				1A560AC02B5AB82D00D4A5B4 /* LogoImageView.swift in Sources */,
 				1A560ABC2B5AB7B900D4A5B4 /* DetailView.swift in Sources */,
+				1A59975F2B5CA0C600D7DAA6 /* ExtensionView.swift in Sources */,
 				1A560AAE2B5AB33400D4A5B4 /* TradingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

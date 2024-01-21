@@ -19,42 +19,39 @@ struct LogoImageView: View {
     //MARK: Computed properties
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius:30)
-                .padding(.init(top: 150, leading: 0, bottom: 100, trailing: 0))
-                .foregroundColor(teamColor)
-                .ignoresSafeArea()
-            VStack {
-                Text(playerName)
-                    .padding(.all, 8)
-                    .background(Color.blue ,in: RoundedRectangle(cornerRadius: 10))
-                    .padding(.bottom)
-                    .font(.largeTitle)
-                    .bold()
-                Image(playerImage)
-                    .resizable()
-                    .cornerRadius(10)
-                    .aspectRatio(contentMode: .fit)
-                    .padding(.leading)
-                    .padding(.trailing)
-            }
-            VStack {
-                Spacer()
-                HStack {
-                    Image(playerSignature)
-                        .resizable()
+            ZStack {
+                RoundedRectangle(cornerRadius:30)
+                    .foregroundColor(teamColor)
+                    .ignoresSafeArea()
+                    VStack {
+                        Text(playerName)
+                            .padding(.all, 8)
+                            .background(Color.blue ,in: RoundedRectangle(cornerRadius: 10))
+                            .padding(.bottom)
+                            .padding(.top, 30)
+                            .font(.largeTitle)
+                            .bold()
+                        Image(playerImage)
+                            .resizable()
+                            .cornerRadius(10)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Image(playerSignature)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                            Image(teamLogo)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 200)
+                        }
+                        .padding(.bottom, 30)
+                        .frame(width: 350)
                         .aspectRatio(contentMode: .fit)
-                        .padding(.bottom)
-                    Image(teamLogo)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding(.leading)
-                        .frame(width: 200)
-                }
-                .padding(.bottom, 140)
-                .padding(.leading)
+                    }
             }
-        }
     }
 }
 
