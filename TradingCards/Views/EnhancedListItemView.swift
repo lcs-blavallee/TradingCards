@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct EnhancedListItemView: View {
+    
+    let playerName: String
+    let playerImage: String
+    let playerDescription: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(playerImage)
+                .resizable()
+                .frame(width: 80, height: 80)
+                .aspectRatio(contentMode: .fit)
+                .clipShape(Circle())
+            
+            VStack (alignment: .leading){
+                Text(playerName)
+                    .font(.title3)
+                    .bold()
+                Text(playerDescription)
+                
+            }
+            
+        }
     }
 }
 
 #Preview {
-    EnhancedListItemView()
+    EnhancedListItemView(playerName: "Vladimir Guerrero Jr.",playerImage: "vladdy", playerDescription: "Vladdy!")
 }

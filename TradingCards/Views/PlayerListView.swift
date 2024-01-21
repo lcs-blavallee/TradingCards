@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct PlayerListView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        NavigationStack {
+            List {
+                
+                
+                NavigationLink(destination: {
+                    
+                    DetailView()
+                    
+                }, label: {
+                    
+                    EnhancedListItemView(playerName: "Vladimir Guerrero Jr.", playerImage: "vladdy", playerDescription: "Vladdy!")
+                    
+                })
+            }
         }
-        .padding()
+        .navigationTitle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Title@*/Text("Title")/*@END_MENU_TOKEN@*/)
     }
 }
 

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    //let player:
+    
     var body: some View {
             ZStack{
                 VStack {
