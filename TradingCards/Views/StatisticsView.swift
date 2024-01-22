@@ -16,7 +16,7 @@ struct StatisticsView: View {
     
     var body: some View {
         ZStack {
-            Color.clear
+            Color.white
                 .ignoresSafeArea()
             VStack (alignment: .leading) {
                 HStack {

@@ -19,7 +19,7 @@ struct EnhancedListItemView: View {
                 .resizable()
                 .frame(width: 80, height: 80)
                 .aspectRatio(contentMode: .fit)
-                .clipShape(Circle())
+                .mask(Circle())
             
             VStack (alignment: .leading){
                 Text(playerName)

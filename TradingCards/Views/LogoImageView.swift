@@ -20,22 +20,11 @@ struct LogoImageView: View {
     
     var body: some View {
             ZStack {
-                RoundedRectangle(cornerRadius:30)
-                    .foregroundColor(teamColor)
-                    .ignoresSafeArea()
-                    VStack {
-                        Text(playerName)
-                            .padding(.all, 8)
-                            .background(Color.blue ,in: RoundedRectangle(cornerRadius: 10))
-                            .padding(.bottom)
-                            .padding(.top, 30)
-                            .font(.largeTitle)
-                            .bold()
                         Image(playerImage)
                             .resizable()
                             .cornerRadius(10)
                             .aspectRatio(contentMode: .fit)
-                    }
+                            .overlay (
                     VStack {
                         Spacer()
                         HStack {
@@ -47,10 +36,11 @@ struct LogoImageView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 200)
                         }
-                        .padding(.bottom, 30)
                         .frame(width: 350)
                         .aspectRatio(contentMode: .fit)
                     }
+                        .padding(.leading, 60)
+                    )
             }
     }
 }

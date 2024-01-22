@@ -25,8 +25,8 @@ struct PlayerListView: View {
                     
                 })
             }
+            .navigationTitle("List of Players")
         }
-        .navigationTitle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Title@*/Text("Title")/*@END_MENU_TOKEN@*/)
     }
 }
 
