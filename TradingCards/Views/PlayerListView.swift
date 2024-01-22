@@ -17,7 +17,7 @@ struct PlayerListView: View {
                 
                 NavigationLink(destination: {
                     
-                    DetailView()
+                    DetailView(player: vladimirGuerreroJr)
                     
                 }, label: {
                     

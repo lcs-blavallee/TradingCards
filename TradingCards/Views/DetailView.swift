@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     
-    //let player:
+    let player: BlueJaysPlayer
     
     var body: some View {
         NavigationStack {
@@ -29,5 +29,5 @@ struct DetailView: View {
     }
 
 #Preview {
-    DetailView()
+    DetailView(player: vladimirGuerreroJr)
 }
